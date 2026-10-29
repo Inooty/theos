@@ -1,9 +1,54 @@
 .GreetingPhoto {
     display: flex;
     align-items: center;
-    gap: 20px
+    gap: 20px;
+    color: #afafaf;
 }
 
 body {
-    font-family: Helvetica
+    font-family: Helvetica;
+    background-image: url(Assets/wallpaper.jpg);
+    background-size: cover;
+}
+
+.Greeting {
+    background-color:#202124;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 16px;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 16px;
+}
+
+.SideBar {
+    display: flex;
+    flex-direction: column;
+
+    width: 20px;
+    height: 90vh;
+    background-color: #202124;
+    color: white;
+    border-radius: 16px;
+    padding: 4px;
+    border: 1px solid white;
+}
+
+.WelcomeHeader {
+    background-color: #2d2e31;
+    color: #afafaf;
+}
+
+#GreetingHandle {
+    margin: -16px -16px 12px;
+    padding: 12px 16px;
+    background-color: #2d2e31;
+    border-radius: 16px 16px 0 0;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
 }
